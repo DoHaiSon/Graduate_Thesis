@@ -1,0 +1,34 @@
+\contentsline {chapter}{Lời cam đoan}{}%
+\contentsline {chapter}{Lời cảm ơn}{}%
+\contentsline {chapter}{Tóm tắt}{}%
+\contentsline {chapter}{Mục lục}{i}%
+\contentsline {chapter}{Danh mục ký hiệu và chữ viết tắt}{iii}%
+\contentsline {chapter}{Danh mục hình vẽ}{viii}%
+\contentsline {chapter}{Danh mục bảng biểu}{x}%
+\contentsline {chapter}{\MakeUppercase {Mở đầu}}{1}%
+\contentsline {chapter}{\numberline {1}\MakeUppercase {Tổng quan về các hệ thống xác định hướng sóng đến}}{4}%
+\contentsline {section}{\numberline {1.1}Khái niệm và ứng dụng của hệ xác định hướng sóng đến}{4}%
+\contentsline {section}{\numberline {1.2}Các công nghệ xác định hướng sóng đến điển hình}{5}%
+\contentsline {subsection}{\numberline {1.2.1}Phương pháp tạo búp sóng}{6}%
+\contentsline {subsection}{\numberline {1.2.2}Thuật toán Maximum Likelihood}{8}%
+\contentsline {section}{\numberline {1.3}Hệ thống xác định hướng sóng đến với thuật toán MUSIC}{10}%
+\contentsline {chapter}{\numberline {2}\MakeUppercase {Triển khai thuật toán MUSIC trên thiết bị SDR}}{14}%
+\contentsline {section}{\numberline {2.1}Phần mềm GNU Radio và thiết bị vô tuyến định nghĩa bằng phần mềm SDR}{14}%
+\contentsline {subsection}{\numberline {2.1.1}Phần mềm GNU Radio}{14}%
+\contentsline {subsection}{\numberline {2.1.2}Thiết bị vô tuyến định nghĩa bằng phần mềm SDR}{18}%
+\contentsline {section}{\numberline {2.2}Phần cứng và phần mềm của BladeRF}{20}%
+\contentsline {subsection}{\numberline {2.2.1}BladeRF x115}{20}%
+\contentsline {subsection}{\numberline {2.2.2}Phần mềm của BladeRF}{22}%
+\contentsline {section}{\numberline {2.3}Triển khai hệ thống xác định hướng sóng đến trên hệ BladeRF}{24}%
+\contentsline {chapter}{\numberline {3}\MakeUppercase {Kết quả mô phỏng, thực nghiệm hệ thống}}{35}%
+\contentsline {section}{\numberline {3.1}Mô phỏng hệ thống trên GNU Radio}{35}%
+\contentsline {subsection}{\numberline {3.1.1}Mô phỏng với dữ liệu Matlab}{35}%
+\contentsline {subsection}{\numberline {3.1.2}Mô phỏng với dữ liệu giả lập BladeRF}{38}%
+\contentsline {section}{\numberline {3.2}Thực nghiệm hệ thống}{39}%
+\contentsline {subsection}{\numberline {3.2.1}Tín hiệu nguồn phát và thiết lập hệ thu}{40}%
+\contentsline {subsection}{\numberline {3.2.2}Tình huống thực nghiệm}{41}%
+\contentsline {subsection}{\numberline {3.2.3}Kết quả thực nghiệm}{42}%
+\contentsline {chapter}{\MakeUppercase {Kết luận và hướng nghiên cứu tiếp theo}}{48}%
+\contentsline {chapter}{\MakeUppercase {Phụ lục}}{50}%
+\contentsline {chapter}{\MakeUppercase {Tài liệu tham khảo}}{55}%
+\contentsfinish 

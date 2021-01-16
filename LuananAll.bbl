@@ -1,0 +1,140 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Quỳnh}{2015}{Quynh2015}
+Quỳnh, T.  \harvardyearleft 2015\harvardyearright , {\em {Nghi{\^{e}}n cứu
+  n{\^{a}}ng cao hiệu năng của hệ t{\`{i}}m phương sử dụng anten
+  kh{\^{o}}ng tầm pha trong m{\^{o}}i trường c{\'{a}}c nguồn t{\'{i}}n
+  hiệu tương quan}}.
+
+\harvarditem{Bellini \harvardand\ Tosi}{1907}{Bellini1907}
+Bellini, E. \harvardand\ Tosi, A.  \harvardyearleft 1907\harvardyearright ,
+  ``{A directive system of wireless telegraphy}'', {\em Proceedings of the
+  Physical Society of London} {\bf 21}(1),~305--328.
+
+\harvarditem[Bergstrom et~al.]{Bergstrom, Chuprun, Gifford \harvardand\
+  Maalouli}{2002}{Bergstrom2002}
+Bergstrom, C., Chuprun, S., Gifford, S. \harvardand\ Maalouli, G.
+  \harvardyearleft 2002\harvardyearright , ``{Software defined radio (SDR)
+  special military applications}'', {\em Proceedings - IEEE Military
+  Communications Conference MILCOM} {\bf 1},~383--388.
+
+\harvarditem[Bloessl et~al.]{Bloessl, Segata, Sommer \harvardand\
+  Dressler}{2013}{Bloessl2013}
+Bloessl, B., Segata, M., Sommer, C. \harvardand\ Dressler, F.  \harvardyearleft
+  2013\harvardyearright , {An IEEE802.11a/g/p OFDM receiver for GNU radio},
+  {\em in} ``SRIF 2013 - Proceedings of the 2nd, 2013 ACM SIGCOMM Workshop on
+  Software Radio Implementation Forum'', pp.~9--15.
+
+\harvarditem{BogdanDIA}{2015}{BogdanDIA2015}
+BogdanDIA  \harvardyearleft 2015\harvardyearright , ``{DVB-T implementation in
+  gnuradio}''.
+\newline\harvardurl{https://github.com/BogdanDIA/gr-dvbt}
+
+\harvarditem{Bracewell}{1978}{Bracewell1978}
+Bracewell, R.  \harvardyearleft 1978\harvardyearright , {\em {The Fourier
+  Transform and Its Applications}}.
+
+\harvarditem{Capon}{1969}{Capon2009}
+Capon, J.  \harvardyearleft 1969\harvardyearright , ``{High-resolution
+  frequency-wavenumber spectrum analysis}'', {\em Adaptive Antennas for
+  Wireless Communications} {\bf 57}(8),~1408 -- 1418.
+
+\harvarditem{{\em {DC offset and IQ Imbalance Correction {\textperiodcentered}
+  Nuand/bladeRF Wiki}}}{n.d.}{Dccali}
+{\em {DC offset and IQ Imbalance Correction {\textperiodcentered} Nuand/bladeRF
+  Wiki}}  \harvardyearleft n.d.\harvardyearright .
+\newline\harvardurl{https://github.com/Nuand/bladeRF/wiki/DC-offset-and-IQ-Imbalance-Correction}
+
+\harvarditem{Feickert}{2005}{Feickert2005}
+Feickert, A.  \harvardyearleft 2005\harvardyearright , ``{The Joint Tactical
+  Radio System (JTRS) and the Army{\'{s}} Future Combat System (FCS): Issues
+  for Congress}'', {\em Congressional Research Service: Report} p.~1.
+
+\harvarditem[Gomez-Miguelez et~al.]{Gomez-Miguelez, Garcia-Saavedra, Sutton,
+  Serrano, Cano \harvardand\ Leith}{2016}{Gomez-Miguelez2016}
+Gomez-Miguelez, I., Garcia-Saavedra, A., Sutton, P.~D., Serrano, P., Cano, C.
+  \harvardand\ Leith, D.~J.  \harvardyearleft 2016\harvardyearright ,
+  ``{srsLTE: An open-source platform for LTE evolution and experimentation}'',
+  {\em Proceedings of the Annual International Conference on Mobile Computing
+  and Networking, MOBICOM} {\bf 03-07-Octo},~25--32.
+
+\harvarditem[Kavitha et~al.]{Kavitha, {Meera Mohan}, Surya, Gandhiraj
+  \harvardand\ Soman}{2015}{Kavitha2015}
+Kavitha, P., {Meera Mohan}, K., Surya, R., Gandhiraj, R. \harvardand\ Soman,
+  K.~P.  \harvardyearleft 2015\harvardyearright , {Implementation of CDMA in
+  GNU radio}, {\em in} ``Procedia Computer Science'', Vol.~46, pp.~981--988.
+
+\harvarditem{Keen}{1922}{Darwin1895}
+Keen, R.  \harvardyearleft 1922\harvardyearright , {\em {Direction and Position
+  Finding by Wireless}}.
+
+\harvarditem{{\em {KerberosSDR Demo software for direction finding and passive
+  radar}}}{2019}{kerberos}
+{\em {KerberosSDR Demo software for direction finding and passive radar}}
+  \harvardyearleft 2019\harvardyearright .
+\newline\harvardurl{https://github.com/rtlsdrblog/kerberossdr}
+
+\harvarditem{Krysik}{2016}{multi-rtl}
+Krysik, P.  \harvardyearleft 2016\harvardyearright , ``{Multi-channel receiver
+  with use of RTL-SDR dongles}''.
+\newline\harvardurl{https://github.com/ptrkrysik/multi-rtl}
+
+\harvarditem{Liberti \harvardand\ Rappaport}{1999}{Liberti1999}
+Liberti, J.~C. \harvardand\ Rappaport, T.  \harvardyearleft
+  1999\harvardyearright , ``{Smart antennas for wireless communications: IS-95
+  and third generation CDMA applications}'', {\em Prentice Hall PTR} {\bf
+  51}(3),~134--134.
+
+\harvarditem{Nehorai \harvardand\ A.}{1989}{Transactions1989}
+Nehorai, P.~S. \harvardand\ A.  \harvardyearleft 1989\harvardyearright ,
+  ``{MUSIC, Maximum Likelihood, and Cramer-Rao Bound}'', {\em IEEE Transactions
+  on Acoustics, Speech, and Signal Processing} {\bf 37}(5).
+
+\harvarditem{Nentwig}{2016}{Nentwig2016}
+Nentwig, M.  \harvardyearleft 2016\harvardyearright , ``{Delay estimation by
+  FFT}'', {\em DSPRelated} .
+
+\harvarditem{{\em {Nuand: kalibrate-bladeRF}}}{2010}{kali}
+{\em {Nuand: kalibrate-bladeRF}}  \harvardyearleft 2010\harvardyearright .
+\newline\harvardurl{https://github.com/Nuand/kalibrate-bladeRF}
+
+\harvarditem{{\em {PyBOMBS (Python Build Overlay Managed Bundle
+  System)}}}{n.d.}{PyBombs}
+{\em {PyBOMBS (Python Build Overlay Managed Bundle System)}}  \harvardyearleft
+  n.d.\harvardyearright .
+\newline\harvardurl{https://github.com/gnuradio/pybombs}
+
+\harvarditem{{R. I. Lackey and D. W. Upmal}}{1995}{Fakhrian2012}
+{R. I. Lackey and D. W. Upmal}  \harvardyearleft 1995\harvardyearright ,
+  ``{Speakeasy: The Military Software Radio}'', {\em IEEE Communications
+  Magazine} {\bf 33}(5),~56--61.
+
+\harvarditem{Schmidt}{1986}{Schmidt2009a}
+Schmidt, R.~O.  \harvardyearleft 1986\harvardyearright , ``{Multiple emitter
+  location and signal parameter estimation}'', {\em Adaptive Antennas for
+  Wireless Communications} (3),~190--194.
+
+\harvarditem{{Travis F Collins}}{n.d.}{TravisFCollins}
+{Travis F Collins}  \harvardyearleft n.d.\harvardyearright , ``{Phase
+  Synchronization Capability of TwinRX Daughterboards and DoA Estimation}'',
+  pp.~1--12.
+
+\harvarditem{{Van Rijsbergen}}{n.d.}{VanRijsbergen}
+{Van Rijsbergen}, K.  \harvardyearleft n.d.\harvardyearright , ``{The
+  effectiveness of a homemade IMSI catcher build with YateBTS and a BladeRF}''.
+
+\harvarditem[Whiting et~al.]{Whiting, Sorensen, Moon \harvardand\
+  Gunther}{2018}{Whiting2018}
+Whiting, S., Sorensen, D., Moon, T.~K. \harvardand\ Gunther, J.~H.
+  \harvardyearleft 2018\harvardyearright , ``{Time and frequency corrections in
+  a distributed radio network}'', {\em Conference Record of 51st Asilomar
+  Conference on Signals, Systems and Computers, ACSSC 2017} {\bf
+  2017-Octob},~1123--1126.
+
+\harvarditem{Ziskind \harvardand\ Wax}{1988}{Ziskind1988}
+Ziskind, I. \harvardand\ Wax, M.  \harvardyearleft 1988\harvardyearright ,
+  ``{Maximum Likelihood Localization of Multiple Sources by Alternating
+  Projection}'', {\em IEEE Transactions on Acoustics, Speech, and Signal
+  Processing} {\bf 36}(10),~1553--1560.
+
+\end{thebibliography}

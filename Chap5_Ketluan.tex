@@ -1,0 +1,36 @@
+%\setcounter{chapter}{4}
+%\chapter[\MakeUppercase{Kết luận và đề xuất}]{Kết luận và đề xuất}
+\addcontentsline{toc}{chapter}{\MakeUppercase{Kết luận và hướng nghiên cứu tiếp theo}}
+
+\chapter*{Kết luận và hướng nghiên cứu tiếp theo}
+\section*{1. Kết luận của khóa luận tốt nghiệp}
+Dựa trên các phân tích, mô phỏng, thực thi thuật toán đã triển khai ở các phần trên, chúng tôi có một số kết luận sau:
+
+- Nếu chỉ sử dụng 2 BladeRF như trong khóa luận, việc ước lượng góc vẫn là khả thi khi ở trong khoảng từ 60$^{\circ}$ đến 135$^{\circ}$ với sai số dưới 6$^{\circ}$. Tuy nhiên để tăng độ chính xác của thuật toán, việc tăng thêm số phần tử trong mảng thu là điều bắt buộc.
+
+- Hệ thống có thể hoạt động ở các điều kiện kênh truyền khác nhau.
+
+- Hệ thống vẫn hoạt động chính xác với tín hiệu băng rộng và cho ra kết quả tương đồng với tín hiệu băng hẹp.
+
+Kết quả của hệ thống vẫn còn phụ thuộc vào loại nguồn tín hiệu dùng để đồng bộ, và điều kiện kênh truyền đặc biệt là nhiễu đa đường. Đây cũng chính là hạn chế của thuật toán MUSIC, việc chỉ dựa trên sự khác biệt về pha của các tín hiệu đến giúp hệ thống hoạt động linh hoạt với các loại điều chế, chuẩn tín hiệu khác nhau, tuy nhiên lại giảm đi sự chính xác khi tín hiệu có sự tương quan lớn gây ra bởi nhiễu đa đường khi đặt hệ thống trong không gian hẹp.
+
+\section*{2. Hướng nghiên cứu tiếp theo}
+%Trong nghiên cứu, phương thức đồng bộ xung đồ hồ chủ, time sampling, hay $f_\textrm{offset}$ đều sử dụng các chức năng có sẵn trên thư viện BladeRF do nhà sản xuất cung cấp, vì thế chưa thể áp dụng ngay hệ thống cho các SDR khác. Vậy nên chúng tôi đề xuất tiếp tục phát triển dự án theo hướng đồng bộ hầu hết các sai số dựa trên việc xử lý tín hiệu như trong dự án của S. Whiting, D. Sorensen, T. K. Moon và J. H. Gunther \cite{Whiting2018}, một dự án đồng bộ hệ RTL-SDR mà không sử dụng thêm bất kỳ liên kết phần cứng nào cho hệ DOA được trình bày tại GRCon 2017.
+
+%Tiếp đến là nhược điểm khi sử dụng GRC, khi GRC không khai thác được hết tính năng của GNU Radio cũng như BladeRFx115, vậy nên nếu với mục đích tạo ra một hệ DOA có độ chính xác cao, việc lập trình độc lập dựa trên thư viện của BladeRF và GNU Radio là điều cần thiết, khi đó các hàm có sẵn trên thư viện BladeRF mới được khai thác hết như Trigger J71 pin 4, giao diện đồng bộ thu với Metadata hay sâu hơn là lập trình FPGA cho BladeRF.
+
+%Việc đồng bộ hiện tại của hệ thống cũng được giả định là giống nhau khi hệ bắt đầu hoạt động đến khi kết thúc, tuy nhiên theo kiểm nghiệm thực tế, khi hệ thống chạy thời gian dài khiến nhiệt độ ra tăng, kết quả đầu ra sẽ không còn độ chính xác như ban đầu, yêu cầu phải hiệu chỉnh lại. Và giải pháp tối ưu hơn cả là sử dụng thêm phần cứng như Noise Source Card được trình bày ở phần 2.3.
+
+%Ứng dụng thực tế của hệ DOA được đề xuất phát triển như thêm bản đồ Google Maps và sử dụng góc đầu ra DOA cùng với bản đồ làm hệ dẫn đường đến nguồn phát tín hiệu. Hay sử dụng 2 hệ DOA kết hợp có thể sử dụng làm hệ thống định vị cho các thiết bị IoT.
+Trong khóa luận, các quá trình thực nghiệm diễn ra trong thời gian chưa đủ dài để nhiệt độ làm ảnh hưởng đến hệ BladeRF thu, vì vậy cần tiếp tục nghiên cứu thêm về thời gian hoạt động trước khi cần đồng bộ lại hệ thống.
+
+Việc chuyển đổi giữa trạng thái đồng bộ và ước lượng hướng sóng đến trong khóa luận còn thủ công, có thể thêm điều kiện để hệ thống tự động chuyển sang trạng thái DOA.
+
+Do điều kiện phần cứng hiện tại hệ thu chỉ gồm 2 thiết bị BladeRF, tuy nhiên việc tăng thêm số phần tửng mảng thu là cần thiết để tăng độ phân giải của hệ thống. Kéo theo đó là tăng được thêm số lượng nguồn sóng đến để phân tích việc có nhiều tín hiệu đến ảnh hưởng đến sự chính xác và ổn định của hệ thống.
+
+Đồng bộ biên độ giữa tất cả các phần tử mảng thu giúp đẩy đỉnh phổ không gian hội tụ tại một đỉnh cao nhất qua việc thay đổi hệ sống khuếch đại, xử lý tín hiệu bằng phần mềm,...
+
+Cuối cùng do BladeRF hỗ trợ khả năng lập trình lại FPGA và có sẵn SPI Flash trong phần cứng, có thể nghiên cứu đưa toàn bộ hệ thống vào phần cứng thay vì sử dụng thêm máy tính để xử lý bên ngoài.
+
+Tất cả khóa luận được cập nhật lên github dưới dạng mã nguồn mở: \\
+\textit{https://github.com/DoHaiSon/gr-DoA\_BladeRF}

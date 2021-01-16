@@ -1,0 +1,322 @@
+\documentclass[a4paper,12pt,oneside]{book}%extreport
+\usepackage{times} 
+%\usepackage{multibib}
+\usepackage{appendix}
+\usepackage[shortlabels]{enumitem}
+\usepackage{booktabs}
+\usepackage{rotating} % Rotating table
+\usepackage{hhline}
+\usepackage{colortbl}
+\usepackage{afterpage}
+\usepackage{mathtools} %Fixes/improves amsmath
+\usepackage{setspace}
+\usepackage[utf8]{vietnam} 
+\usepackage{amstext, amsmath,latexsym,amsbsy,amssymb}
+\usepackage[left=3.5cm,right=2cm,top=3.0cm,bottom=3cm,footskip=40pt]{geometry}
+\usepackage{pdflscape}
+\usepackage{apacite}
+\usepackage{tikz}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usetikzlibrary{calc}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{array,color,colortbl}
+\setcounter{secnumdepth}{4}
+ %\usepackage[square,numbers]{natbib}
+\usepackage[square, comma, numbers, sort&compress]{natbib}
+\setlength{\parindent}{1cm}
+\usepackage{color}
+\usepackage{indentfirst}
+\usepackage{exscale,eucal}
+\usepackage{fancyhdr}
+\usepackage{fncychap}
+\usepackage[chapter]{algorithm}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{algpseudocode}
+\usepackage{tabularx,multicol,multirow,longtable}
+\usepackage{etoolbox}
+\usepackage{tikz}
+\usepackage{tikz}
+	\usetikzlibrary{decorations.pathmorphing}
+	\usetikzlibrary{matrix} 
+	\usetikzlibrary{arrows} 
+	\usetikzlibrary{calc} 
+	\usetikzlibrary{plotmarks} 
+	\usetikzlibrary{shadows}
+
+	\usetikzlibrary{patterns}
+	\tikzstyle{block} = [draw,rectangle,thick,minimum height=2em,minimum width=2em,drop shadow,fill=blue!50]
+	\tikzstyle{sum} = [draw,circle,inner sep=0mm,minimum size=2mm]
+	\tikzstyle{connector} = [->,thick]
+	\tikzstyle{line} = [very thick]
+	\tikzstyle{branch} = [circle,inner sep=0pt,minimum size=1mm,fill=black,draw=black]
+	\tikzstyle{axes} = [->,>=stealth',semithick]
+	\tikzstyle{important line} = [very thick,draw=red]
+	\tikzstyle{important text} = [rounded corners,fill=red!10,inner sep=1ex]
+	\usepackage{pgfplots}
+\usepackage[numbers]{natbib}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage[labelsep=period]{caption}
+    \usepackage[normalsize]{subfigure}
+\DeclareCaptionFormat{myformat}{\fontsize{13}{15}\selectfont#1#2#3}
+\captionsetup{format=myformat}
+\usepackage{titletoc}
+\titlelabel{\thetitle.\,\,}
+\titleformat{\chapter}[display] 
+  {\fontsize{14}{16}\selectfont\bfseries\centering}
+  {\MakeUppercase{\chaptertitlename}\ \thechapter}{0pt}{\fontsize{14}{16}\selectfont\MakeUppercase}
+\titlespacing{\chapter}{0pt}{0pt}{40pt} 
+\titleformat*{\section}{\fontsize{14}{14}\selectfont\bfseries}
+\titleformat*{\subsection}{\fontsize{14}{14}\selectfont\bfseries\slshape}
+\titleformat*{\subsubsection}{\fontsize{14}{14}\slshape}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+\graphicspath {{figures/}}
+
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt} 
+\titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage[subfigure]{tocloft} 
+
+\cftsetpnumwidth{20pt}
+\titlecontents{chapter}
+  [0pt]
+  {}
+  {\fontsize{13.5}{14}\selectfont\MakeUppercase{\chaptername}\ \thecontentslabel.\,\,}
+  {}
+  {\cftdotfill{\cftdotsep}\contentspage} 
+	\renewcommand{\cftsecaftersnum}{.}%
+	\renewcommand{\cftsubsecaftersnum}{.}%
+
+\usetikzlibrary{calc}
+\newtheorem{definition}{\bf Định nghĩa}[chapter]
+\newtheorem{theorem}{\bf Định lý}[chapter]
+\newtheorem{lemma}{\bf Bổ đề}[chapter]
+
+\renewcommand{\cftfigfont}{Hình~}
+\renewcommand{\cfttabfont}{Bảng~ }
+\floatname{algorithm}{Thuật toán}
+\makeatletter
+\renewcommand\@biblabel[1]{[#1]}
+\renewcommand\harvardyearleft{\unskip~(}
+\renewcommand\harvardyearright{\unskip )}
+\makeatother
+\renewcommand{\baselinestretch}{1.4}
+\flushbottom
+\renewcommand*{\bibfont}{\fontsize{13}{16}\selectfont}
+\begin{document}
+\fontsize{13}{15.5}\selectfont
+
+
+\pagestyle{empty}
+\input{Biangoaifinal}
+\newpage
+\pagestyle{plain}
+\pagenumbering{gobble}
+%\newpage
+%\pagestyle{empty}
+\input{trangbiatrong}
+\newpage
+\def\baselinestretch{1.3}
+\pagestyle{plain}
+\pagenumbering{gobble}
+\input{loicamdoan}
+\newpage
+\input{loicamon} 
+\newpage
+\input{tomtat}
+\newpage
+\pagenumbering{roman}
+
+
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{0.6ex}
+
+\fontsize{13}{16}\selectfont
+\renewcommand{\contentsname}{\vspace{-70pt}\centerline{\fontsize{14}{16}\selectfont\MakeUppercase{Mục lục}}}
+\addcontentsline{toc}{chapter}{Mục lục}
+\tableofcontents
+\clearpage
+\input{viettatFinal2204.tex}
+\newpage
+\addcontentsline{toc}{chapter}{Danh mục hình vẽ}
+\renewcommand{\listfigurename}{\vspace{-70pt}\centerline{\fontsize{14}{16}\selectfont{\MakeUppercase{Danh mục   hình vẽ}}}}
+\listoffigures
+\fontsize{13}{16}\selectfont
+\newpage
+\addcontentsline{toc}{chapter}{Danh mục bảng biểu}
+\renewcommand{\listtablename}{\vspace{-70pt}\centerline{\fontsize{14}{16}\selectfont{\MakeUppercase{Danh mục bảng biểu}}}}
+\listoftables
+\fontsize{13}{16}\selectfont
+\newpage
+
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\input{Chap0_Introduction.tex}
+\newpage
+\input{Chap1_Background.tex}
+\newpage
+\input{Chap2_GNUSDR.tex}
+\newpage
+\input{Chap3_Main_new.tex}
+\newpage
+%\input{Chap4_KQ.tex}
+%\newpage
+\input{Chap5_Ketluan.tex}
+%\newpage
+\newpage
+
+%\addcontentsline{toc}{chapter}{\MakeUppercase{Phụ lục}}
+\appendix
+\input{phulucA.tex}
+%\input{Chap5_Congbo}
+\def\baselinestretch{1}
+%\chapter*{tài liệu tham khảo}
+%\noindent \textbf{Tiếng Anh}
+%Tiếng Việt
+%\let\clearpage\relax
+\vspace{-2cm}
+\renewcommand{\bibname}{Tài liệu tham khảo}
+\addcontentsline{toc}{chapter}{\MakeUppercase{Tài liệu tham khảo}}
+\renewcommand{\refname}{Literary works}
+\begin{thebibliography}{xx}
+	\section*{Tiếng Việt}
+	\vspace{0.3cm}
+	\harvarditem{Quỳnh}{2015}{Quynh2015}
+	Trần Thị Thúy Quỳnh , {\em {Nghi{\^{e}}n cứu
+			n{\^{a}}ng cao hiệu năng của hệ t{\`{i}}m phương sử dụng anten
+			kh{\^{o}}ng tầm pha trong m{\^{o}}i trường c{\'{a}}c nguồn t{\'{i}}n
+			hiệu tương quan}}, Luận án tiến sĩ, 2015, tr.~19--23.
+	\vspace{0.5cm}	
+	\section*{Tiếng Anh}	
+	
+	\harvarditem{Feickert}{2005}{Feickert2005}
+	Andrew Feickert, ``{The Joint Tactical
+		Radio System (JTRS) and the Army{\'{s}} Future Combat System (FCS): Issues
+		for Congress}'', {\em Congressional Research Service: Report}, 2005, pp.~1.
+	
+	\harvarditem[Bloessl et~al.]{Bloessl, Segata, Sommer \harvardand\
+		Dressler}{2013}{Bloessl2013}
+	B. Bloessl, M. Segata, C. Sommer \harvardand\ F. Dressler, ``An IEEE802.11a/g/p OFDM receiver for GNU radio'',
+	{\em SRIF 2013 - Proceedings of the 2nd, 2013 ACM SIGCOMM Workshop on
+	Software Radio Implementation Forum}, 2013, pp.~9--15.
+
+	\harvarditem{BogdanDIA}{2015}{BogdanDIA2015}
+	BogdanDIA  , ``{DVB-T implementation in gnuradio}'', 2015.
+	\newline{[Online]. Available: $https://github.com/BogdanDIA/gr-dvbt$}
+
+	\harvarditem[Bergstrom et~al.]{Bergstrom, Chuprun, Gifford \harvardand\
+	Maalouli}{2002}{Bergstrom2002}
+	C. Bergstrom, S. Chuprun, S. Gifford, \harvardand\ G. Maalouli
+	, ``{Software defined radio (SDR)
+	special military applications}'', {\em MILCOM 2002. Proceedings},
+	{vol.~1}, 2002, pp.~383--388.
+	
+	\harvarditem{Bellini \harvardand\ Tosi}{1907}{Bellini1907}
+	E. Bellini \harvardand\ A. Tosi,
+	``{A directive system of wireless telegraphy}'', {\em Proceedings of the
+		Physical Society of London}, vol.~21, no.~1, 1907, pp.~305--328.
+	
+	\harvarditem[Gomez-Miguelez et~al.]{Gomez-Miguelez, Garcia-Saavedra, Sutton,
+		Serrano, Cano \harvardand\ Leith}{2016}{Gomez-Miguelez2016}
+	I. Gomez-Miguelez, A. Garcia-Saavedra, Paul D. Sutton, P. Serrano, C. Cano
+	\harvardand\ Douglas J. Leith,
+	``{srsLTE: An open-source platform for LTE evolution and experimentation}'',
+	{\em Proceedings of the Annual International Conference on Mobile Computing
+		and Networking, MOBICOM}, 2016, pp.~25--32.
+	
+	\harvarditem{Ziskind \harvardand\ Wax}{1988}{Ziskind1988}
+	I. Ziskind \harvardand\ M. Wax,
+	``{Maximum Likelihood Localization of Multiple Sources by Alternating
+		Projection}'', {\em IEEE Transactions on Acoustics, Speech, and Signal
+		Processing}, {vol.~36}, no.~10, 1988, pp.~1553--1560.
+	
+	\harvarditem{Capon}{1969}{Capon2009}
+	J. Capon, ``{High-resolution frequency-wavenumber spectrum analysis}'', 
+	{\em Proceedings of the IEEE}, {vol.~57}, no.~8, 1969, pp.~1408--1418.
+	
+	\harvarditem{Liberti \harvardand\ Rappaport}{1999}{Liberti1999}
+	Joseph C. Liberti \harvardand\ Theodore S. Rappaport, {\em Smart antennas for wireless communications: IS-95 and third generation CDMA applications}, 
+	{Prentice Hall PTR}, 1999, pp.~134--134.
+	
+	\harvarditem{{Van Rijsbergen}}{n.d.}{VanRijsbergen}
+	Kenneth van Rijsbergen, ``{The
+		effectiveness of a homemade IMSI catcher build with YateBTS and a BladeRF}'', {\em Semanticscholar}, 2016.
+	
+	\harvarditem{{\em {KerberosSDR Demo software for direction finding and passive
+				radar}}}{2019}{kerberos}
+	{KerberosSDR: ``Demo software for direction finding and passive radar''}, 2019.
+	\newline{[Online]. Available: $https://github.com/rtlsdrblog/kerberossdr$}
+	
+	\harvarditem{Nentwig}{2016}{Nentwig2016}
+	M. Nentwig, ``{Delay estimation by FFT}'', {\em DSPRelated}, 2016.
+	
+	\harvarditem{{\em {DC offset and IQ Imbalance Correction {\textperiodcentered}
+				Nuand/bladeRF Wiki}}}{n.d.}{Dccali}
+	{ {Nuand/bladeRF, ``DC offset and IQ Imbalance Correction''.}} 
+	\newline{[Online]. Available: $https://github.com/Nuand/bladeRF/wiki/DC-offset-and-IQ-Imbalance-Correction$}
+	
+	\harvarditem{{\em {Nuand: kalibrate-bladeRF}}}{2010}{kali}
+	{Nuand/bladeRF: ``kalibrate-bladeRF''}, 2010.
+	\newline{[Online]. Available: $https://github.com/Nuand/kalibrate-bladeRF$}
+	
+	\harvarditem[Kavitha et~al.]{Kavitha, {Meera Mohan}, Surya, Gandhiraj
+		\harvardand\ Soman}{2015}{Kavitha2015}
+	P. Kavitha, K. Meera Mohan, R. Surya, R. Gandhiraj \harvardand\ K.P. Soman, {``Implementation of CDMA in GNU radio''}, {\em Procedia Computer Science}, vol.~46, 2015, pp.~981--988.
+	
+	\harvarditem{Krysik}{2016}{multi-rtl}
+	P. Krysik, ``{Multi-channel receiver with use of RTL-SDR dongles}'', 2016.
+	\newline{[Online]. Available: $https://github.com/ptrkrysik/multi-rtl$}
+	
+	\harvarditem{Nehorai \harvardand\ A.}{1989}{Transactions1989}
+	P. Stoica \harvardand\ A. Nehorai,
+	``{MUSIC, Maximum Likelihood, and Cramer-Rao Bound}'', {\em IEEE Transactions
+		on Acoustics, Speech, and Signal Processing}, {vol.~37}, no.~5, 1989.
+	
+	\harvarditem{{\em {PyBOMBS (Python Build Overlay Managed Bundle
+				System)}}}{n.d.}{PyBombs}
+	PyBOMBS: ``Python Build Overlay Managed Bundle System''.
+	\newline{[Online]. Available: $https://github.com/gnuradio/pybombs$}
+	
+	\harvarditem{Bracewell}{1978}{Bracewell1978}
+	Ronald N. Bracewell, {\em {The Fourier Transform and Its Applications}}, McGraw-Hill, 1978, pp.~46 and 243.
+	
+	\harvarditem{{R. I. Lackey and D. W. Upmal}}{1995}{Fakhrian2012}
+	{R. I. Lackey and D. W. Upmal},
+	``{Speakeasy: The Military Software Radio}'', {\em IEEE Communications
+		Magazine}, {vol.~33}, no.~5, 1995, pp.~56--61.
+	
+	\harvarditem{Keen}{1922}{Darwin1895}
+	R. Keen, {\em {Direction and Position Finding by Wireless}}, 1922.
+	
+	\harvarditem{Schmidt}{1986}{Schmidt2009a}
+	R. Schmidt, ``{Multiple emitter
+		location and signal parameter estimation}'', {\em IEEE Transactions on Antennas and Propagation}, vol.~34, no.~3, 1986, pp~276--280.
+	
+	\harvarditem[Whiting et~al.]{Whiting, Sorensen, Moon \harvardand\
+		Gunther}{2018}{Whiting2018}
+	S. Whiting, D. Sorensen, T. K. Moon \harvardand\ J. H. Gunther,
+	 ``{Time and frequency corrections in
+		a distributed radio network}'', {\em 2017 51st Asilomar Conference on Signals, Systems, and Computers}, 2017, pp.~1123--1126.
+	
+	\harvarditem{{Travis F Collins}}{n.d.}{TravisFCollins}
+	 Srikanth Pagadarai, Travis Collins and Alexander M. Wyglinski, ``{Phase
+		Synchronization Capability of TwinRX Daughterboards and DoA Estimation}'', {\em Ettus Research}, 2016, pp.~1--12.
+	
+\end{thebibliography}
+
+%\bibliographystyle{myagsm}
+%Tài liệu tham khảo
+%\bibliography{library}
+
+%\bibliographystyleNew{ieee}
+%\bibliographyNew{library}
+
+\end{document}
+
