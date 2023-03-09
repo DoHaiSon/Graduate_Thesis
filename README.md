@@ -1,7 +1,9 @@
-# My Thesis by Latex - 2020
+# My Graduate Thesis by Latex - 2020
 
-You can use this template by Latex IDE (texstudio, overleaf, ...)
+Latex template for VNU-UET Student thesis in Vietnamese.
 
-#### Main file: LuananAll.tex
+## I strongly recommend users that upload and use this template on Overleaf (online) or TexStudio (offline).
+
+#### Latex main file: main.tex
 
 #### For Microsoft Word: Word_template.docx
