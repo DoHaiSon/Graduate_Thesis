@@ -1,0 +1,30 @@
+\clearpage
+\phantomsection
+
+\addcontentsline{toc}{chapter}{{KẾT LUẬN VÀ HƯỚNG NGHIÊN CỨU TIẾP THEO}}
+
+\chapter*{Kết luận và hướng nghiên cứu tiếp theo}
+\section*{1. Kết luận của khóa luận tốt nghiệp}
+Dựa trên các phân tích, mô phỏng, thực thi thuật toán đã triển khai ở các phần trên, chúng tôi có một số kết luận sau:
+
+- Nếu chỉ sử dụng 2 BladeRF như trong khóa luận, việc ước lượng góc vẫn là khả thi khi ở trong khoảng từ 60$^{\circ}$ đến 135$^{\circ}$ với sai số dưới 6$^{\circ}$. Tuy nhiên để tăng độ chính xác của thuật toán, việc tăng thêm số phần tử trong mảng thu là điều bắt buộc.
+
+- Hệ thống có thể hoạt động ở các điều kiện kênh truyền khác nhau.
+
+- Hệ thống vẫn hoạt động chính xác với tín hiệu băng rộng và cho ra kết quả tương đồng với tín hiệu băng hẹp.
+
+Kết quả của hệ thống vẫn còn phụ thuộc vào loại nguồn tín hiệu dùng để đồng bộ, và điều kiện kênh truyền đặc biệt là nhiễu đa đường. Đây cũng chính là hạn chế của thuật toán MUSIC, việc chỉ dựa trên sự khác biệt về pha của các tín hiệu đến giúp hệ thống hoạt động linh hoạt với các loại điều chế, chuẩn tín hiệu khác nhau, tuy nhiên lại giảm đi sự chính xác khi tín hiệu có sự tương quan lớn gây ra bởi nhiễu đa đường khi đặt hệ thống trong không gian hẹp.
+
+\section*{2. Hướng nghiên cứu tiếp theo}
+Trong khóa luận, các quá trình thực nghiệm diễn ra trong thời gian chưa đủ dài để nhiệt độ làm ảnh hưởng đến hệ BladeRF thu, vì vậy cần tiếp tục nghiên cứu thêm về thời gian hoạt động trước khi cần đồng bộ lại hệ thống.
+
+Việc chuyển đổi giữa trạng thái đồng bộ và ước lượng hướng sóng đến trong khóa luận còn thủ công, có thể thêm điều kiện để hệ thống tự động chuyển sang trạng thái DOA.
+
+Do điều kiện phần cứng hiện tại hệ thu chỉ gồm 2 thiết bị BladeRF, tuy nhiên việc tăng thêm số phần tửng mảng thu là cần thiết để tăng độ phân giải của hệ thống. Kéo theo đó là tăng được thêm số lượng nguồn sóng đến để phân tích việc có nhiều tín hiệu đến ảnh hưởng đến sự chính xác và ổn định của hệ thống.
+
+Đồng bộ biên độ giữa tất cả các phần tử mảng thu giúp đẩy đỉnh phổ không gian hội tụ tại một đỉnh cao nhất qua việc thay đổi hệ sống khuếch đại, xử lý tín hiệu bằng phần mềm,...
+
+Cuối cùng do BladeRF hỗ trợ khả năng lập trình lại FPGA và có sẵn SPI Flash trong phần cứng, có thể nghiên cứu đưa toàn bộ hệ thống vào phần cứng thay vì sử dụng thêm máy tính để xử lý bên ngoài.
+
+Tất cả khóa luận được cập nhật lên github dưới dạng mã nguồn mở: \\
+\url{https://github.com/DoHaiSon/gr-DoA_BladeRF}

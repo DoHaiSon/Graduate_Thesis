@@ -1,0 +1,68 @@
+\clearpage
+\phantomsection
+
+\addcontentsline{toc}{chapter}{{Mở đầu}}
+\chapter*{Mở đầu}
+\noindent{\Large \textbf{Lý do chọn đề tài}}
+
+Trong thời đại 4.0 ngày nay, việc xác định hướng đến của đối tượng là nhu cầu không thể thiếu để xây dựng các hệ thống thông minh (xe tự hành, robot tự động, kết hợp với định vị để chỉ đường,…) cũng như những mục đích về an ninh như dò những máy phá sóng dựa trên tần số máy tạo ra, hay định vị hướng tín hiệu cấp cứu tàu thuyền trên biển để ứng cứu kịp thời.
+
+Direction of Arrival (DOA) hay ước lượng hướng sóng đến của tín hiệu tại một điểm đặt mảng anten, hệ thống DOA phải có các đặc tính: độ phân giải cao, ổn định, thích hợp với các thông số đầu vào khác nhau. Thuật toán MUSIC là một phương pháp phổ biến để ước lượng hướng sóng đến với nhiều ưu điểm về độ phân giải so với các thuật toán búp sóng cũng như độ phức tạp thuật toán ở mức trung bình, có thể xác định hướng của nhiều tín hiệu đến với nhiều kiểu điều chế khác nhau và cấu trúc mảng anten tùy ý.
+
+Với ưu điểm truyền/nhận được nhiều loại chuẩn tín hiệu, ở tần số có thể tùy chỉnh dựa trên phần mềm nạp vào, các thiết bị vô tuyến định nghĩa bằng phần mềm SDR kết hợp với phần mềm GNU Radio được mong đợi sẽ trở thành công nghệ thống trị trong truyền thông vô tuyến. Bắt kịp xu thế đó, trong khóa luận này sẽ tập trung nghiên cứu đề tài: \textbf{Xây dựng hệ thống xác định hướng sóng đến sử dụng thuật toán MUSIC trên thiết bị SDR} nhằm thực hiện đồng bộ hệ BladeRF và triển khai xác định hướng sóng đến trên hệ BladeRF để kiểm nghiệm tính chính xác của hệ DOA trong môi truyền thực tế.
+\vspace{0.5cm}
+
+\noindent{\Large \textbf{Phương pháp nghiên cứu}}
+
+Trong khóa luận, để đạt được mục đích nghiên cứu, sinh viên đã tìm
+hiểu các tài liệu, bài báo, tạp chí quốc tế,... có uy tín, thực hiện việc tính toán mô hình dữ liệu, phân tích số học để đưa ra các hướng giải quyết hợp lý, và sau đó kiểm nghiệm lại kết quả bằng hình thức mô phỏng trên Matlab, GNU Radio cuối cùng là thực nghiệm trên hệ BladeRF thực.
+
+Cụ thể các phương pháp nghiên cứu sau đã được sử dụng trong khóa luận:
+
+\renewcommand{\labelitemi}{$-$}
+\begin{itemize}
+	\item Sử dụng thuật toán Delay and Sum, Capon và MUSIC xác định hướng sóng đến cho mô hình tính hiệu băng hẹp.
+	\item Sử dụng CRB: xác định ngưỡng phân giải của hệ anten ULA.
+	\item Vận dụng tương quan chéo ước lượng độ lệch mẫu từ hệ SDR.
+	\item Vận dụng thuật toán MUSIC tìm sự sai khác pha giữa các tín hiệu.
+\end{itemize} 
+\vspace{0.3cm}
+
+\noindent{\Large \textbf{Nội dung nghiên cứu}}
+
+\renewcommand{\labelitemi}{$-$}
+\begin{itemize}
+	\item Tìm hiểu, mô phỏng và đánh giá độ phân giải của một số thuật toán ước lượng nhiều nguồn tín hiệu phổ biến, có thể áp dụng cho cấu trúc mảng tùy ý, bao gồm: CBF, Capon, MUSIC, ML.
+	\item Tìm hiểu tổng quan về thiết bị SDR và phần mềm GNU Radio.
+	\item Tìm hiểu về BladeRF x115 và lập trình khối trên GNU Radio.
+	\item Đồng bộ hệ BladeRF x115 cho việc triển khai hệ DOA.
+	\item Kiểm nghiệm thực tế trên hệ BladeRF thực, đánh giá kết quả ước lượng DOA.
+\end{itemize} 
+\vspace{0.3cm}
+
+\noindent{\Large \textbf{Đóng góp của đề tài}}
+
+Với sự hiểu biết của sinh viên, những kết quả nghiên cứu trong khóa luận đã đạt được mục đích nghiên cứu đề ra. Những kết quả này bao gồm:
+
+\renewcommand{\labelitemi}{$-$}
+\begin{itemize}
+	\item Tìm hiểu tổng quan về các hệ thống DOA.
+	\item Tổng quan về thiết bị SDR: BladeRF x115 và phần mềm GNU Radio.
+	\item Các phương pháp đồng bộ hóa hệ thu SDR.
+	\item Ứng dụng thuật toán MUSIC vào thiết bị SDR thời gian thực.
+	\item Đánh giá, phân tích kết quả thu được với kết quả mô phỏng.
+\end{itemize} 
+
+\noindent{\Large \textbf{Bố cục của khóa luận}}
+\vspace{0.5cm}
+
+Nội dung chính của khóa luận được trình bày như sau:
+
+\renewcommand{\labelitemi}{$-$}
+\begin{itemize}
+	\item Mở đầu: Trình bày mục đích, phương pháp nghiên cứu, nội dung, đóng góp và bố cục của khóa luận.
+	\item Chương 1: Tổng quan về các hệ thống xác định hướng sóng đến – Trình bày các công nghệ xác định hướng sóng đến điển hình hiện nay và chi tiết về hệ tìm hướng sóng đến bằng thuật toán MUSIC.
+	\item Chương 2: Triển khai thuật toán MUSIC trên thiết bị SDR – Tìm hiểu tổng quan về phần mềm GNU Radio và thiết bị SDR, phương pháp tạo khối trên GNU Radio và giải quyết việc đồng bộ hệ SDR.
+	\item Chương 3: Kết quả mô phỏng, thực nghiệm hệ thống – Sử dụng dữ liệu mô phỏng BladeRF trên GNU Radio xác định hướng sóng đến và thực nghiệm hệ thống với tín hiệu BladeRF thực. Qua đó so sánh, nhận xét về kết quả thu được.
+	\item Kết luận và hướng nghiên cứu tiếp theo: Đưa ra kết luận về việc sử dụng thiết bị SDR trong việc xác định hướng sóng đến và đề xuất các giải pháp để cải thiện hệ thống.
+\end{itemize} 
