@@ -6,4 +6,4 @@ Latex template for VNU-UET Student thesis in Vietnamese.
 
 #### Latex main file: main.tex
 
-#### For Microsoft Word: Word_template.docx
+#### For Microsoft Word (thanks to Mr. Le Quoc Anh): Word_template.docx
